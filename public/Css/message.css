@@ -1,0 +1,104 @@
+.Message-body {
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px 20px 30px 10px;
+  background-color: #115327;
+}
+
+.Message-button {
+  position: relative;
+  margin-left: 315px;
+  margin-top: 2px;
+
+  background-color: rgba(197, 253, 144, 0.25);
+  box-shadow: 0 3px rgba(171, 190, 139, 0.4);
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.Message-button:hover {
+  background-color: grey;
+}
+
+.Message {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  left: calc(57% - 196px);
+  top: calc(60% - 100px);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5%;
+
+  grid-template-rows: auto 1fr auto;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.Message-icon {
+  display: table-cell;
+  vertical-align: middle;
+  width: 2px;
+  padding: 20px;
+  text-align: center;
+  background-color: #8b8a8a;
+}
+
+.error_message {
+  font-size: small;
+  color: red;
+}
+
+.Message {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin-top: 258px;
+  /* display: block; */
+  /* position: relative; */
+  /* width: 200px; */
+  /* height: 200px; */
+  /* left: calc(48% - 196px); */
+  /* top: calc(60% - 100px); */
+  /* text-align: center; */
+  /* padding: 10px; */
+  border-radius: 5%;
+  grid-template-rows: auto 1fr auto;
+  font-size: 20px;
+  margin-top: 0px;
+  color: #fff;
+  transition: all 0.2s ease;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+/*
+the old message 
+
+
+  .Message {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: calc(48% - 196px);
+    top: calc(60% - 100px);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5%;
+
+    grid-template-rows: auto 1fr auto;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff;
+    transition: all 0.2s ease;
+  }
+*/

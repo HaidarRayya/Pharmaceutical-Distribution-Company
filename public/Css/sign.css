@@ -1,0 +1,159 @@
+:root {
+  --fun-green: #186049;
+  --eden: #247158;
+  --trade-wind: #6ab29b;
+  --dawn-pink: #e4d5c7;
+  --almond-frost: #95877a;
+}
+/* end variables */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  background-image: url(/images/b6.jpg);
+  background-size: contain;
+}
+.container {
+  /* width: 600px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.sign-card {
+  position: relative;
+  overflow: hidden;
+  height: 493px;
+  border: 3px solid var(--fun-green);
+  width: 372px;
+  margin-top: 130px;
+  margin: 116px auto;
+  border-radius: 18px;
+  background-color: #ffffff45;
+}
+.sign-card .container {
+  margin-left: 43px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.para {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 123px;
+}
+.para h3 {
+  margin-left: 40px;
+}
+.input {
+  box-shadow: 3px 3px 3px 3px gray;
+  height: 42px;
+  border-radius: 9px;
+  width: 62%;
+  margin-top: 9px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input-group {
+  position: relative;
+}
+.input-group-name {
+  position: relative;
+}
+.input-name {
+  box-shadow: 3px 3px 3px 3px gray;
+  height: 42px;
+  border-radius: 9px;
+  width: 32%;
+  margin-top: 9px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.placeholder {
+  z-index: 5;
+  position: absolute;
+  top: 44px;
+  left: 8px;
+  font-size: 14px;
+  padding: 0px 5px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.placeholder2 {
+  z-index: 5;
+  position: absolute;
+  top: 42px;
+  left: 142px;
+  font-size: 14px;
+  padding: 0px 5px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.input:focus + .placeholder {
+  top: 19px;
+  left: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.input-name:focus + .placeholder {
+  top: 19px;
+  left: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.input-name:focus + .placeholder2 {
+  top: 19px;
+  left: 143px;
+  background-color: rgb(255, 255, 255);
+}
+.choose {
+  margin-top: 15px;
+}
+.file {
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 250px;
+}
+.certificate {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+#certification {
+  margin-top: 15px;
+  position: absolute;
+  top: 625px;
+  transition: 0.5s;
+}
+h1 {
+  font-size: clamp(40px, 8vw, 105px);
+}

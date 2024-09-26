@@ -1,0 +1,173 @@
+:root {
+  --fun-green: #186049;
+  --eden: #247158;
+  --trade-wind: #6ab29b;
+  --dawn-pink: #e4d5c7;
+  --almond-frost: #95877a;
+}
+
+body {
+  background-color: aliceblue;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: cover;
+  background-image: url(../images/s3.jpg);
+}
+
+.form {
+  margin: 115px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 28px;
+  color: var(--fun-green);
+  font-weight: 620;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-bottom: -8px;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: green;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: green;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.welcome,
+.signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: var(--fun-green);
+  text-decoration: none;
+}
+
+.signin a:hover {
+  text-decoration: underline var(--fun-green);
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  margin-bottom: 21px;
+  width: 89%;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 13.9px;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  background-color: white;
+  top: -6px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  width: 78px;
+  border: none;
+  outline: none;
+  background-color: var(--fun-green);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+  margin-top: 30px;
+}
+
+.submit:hover {
+  background-color: var(--eden);
+  cursor: pointer;
+}
+h1 {
+  font-size: clamp(40px, 8vw, 105px);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.back {
+  text-decoration: none;
+  text-align: center;
+  width: 60px;
+  border: none;
+  outline: none;
+  background-color: var(--fun-green);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+  margin-top: 30px;
+}
